@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "rgName1": {
+            "value": "scenario1rg"
+        },
+        "location": {
+            "value": "westus"
+        },
+        "vnetName": {
+            "value": "vnet01"
+        },
+        "subnet": {
+            "value": [
+                {
+                    "name": "front",
+                    "addressPrefix": "10.0.1.0/24"
+                },
+                {
+                    "name": "middletier",
+                    "addressPrefix": "10.0.2.0/24"
+                },
+                {
+                    "name": "backend",
+                    "addressPrefix": "10.0.3.0/24"
+                }
+            ]
+        }
+    }
+}
